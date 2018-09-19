@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/Game.js"></script>
+    <script src="js/Map.js"></script>
+    <script src="js/Begin.js"></script>
+    <script src="js/PeaCard.js"></script>
+    <script src="js/SunBack.js"></script>
+    <script src="js/Start_EndButton.js"></script>
+    <script src="js/Pea.js"></script>
+    <script src="js/Zombie.js"></script>
+    <script src="js/Sod.js"></script>
+    <script src="js/Bullet.js"></script>
+    <script src="js/Sun.js"></script>
+    <script src="js/ZombieImg.js"></script>
+    <script src="js/Flag.js"></script>
+
+</head>
+<body onload="start()">
+<div style="margin: 50px auto; width: 900px;">
+    <canvas id="myCanvas" width="900px" height="600px" style="border: dodgerblue 1px solid;"></canvas>
+</div>
+
+<script>
+    function start() {
+        game = new Game();
+        game.init();
+        setInterval('game.run()',100);
+    }
+</script>
+
+</body>
+</html>
